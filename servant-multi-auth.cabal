@@ -1,0 +1,28 @@
+cabal-version: 2.4
+name:          servant-multi-auth
+version:       0.1.0.0
+author:        gareth stokes
+maintainer:    gareth.stokes@paidright.io
+
+library
+  exposed-modules:  App
+  build-depends:
+    , base            ^>=4.16.1.0
+    , servant-server  ^>=0.19
+    , text
+    , bytestring
+    , wai
+    , warp
+    , http-types
+
+  hs-source-dirs:   src
+  default-language: Haskell2010
+
+executable servant-multi-auth
+  main-is:          Main.hs
+  build-depends:
+    , base                ^>=4.16.1.0
+    , servant-multi-auth
+
+  hs-source-dirs:   app
+  default-language: Haskell2010
