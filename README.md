@@ -8,7 +8,7 @@ cabal new-build
 cabal new-exec servant-multi-auth
 ```
 
-Gree, Red and Blue
+Green, Red and Blue
 ----
 
 The green endpoint is unauthorised and will work like such
